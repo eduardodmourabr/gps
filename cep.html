@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+    crossorigin=""/>
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+    crossorigin=""></script>
+    <link rel="stylesheet" href="mapa.css">
+    <title>LeaFlet</title>
+    
+</head>
+<body>
+    
+                    
+    
+    <div class="grid">
+        <div class="g1">
+            <h1>Localização</h1>
+        </div>
+
+        <div class="g2">
+            <div class="leiaut" class="">
+                <div class="pesquisar" style="margin: 30px 0;">
+                    <input id="cep" type="number" placeholder="Digite um CEP">
+                    <button id="buscar" type="button" onclick="gCep()">Buscar</button>
+                    
+                </div>
+                <div id="map"></div>
+                <a href="./index.html"><button type="button" class="voltar">Voltar</button></a>
+                
+                
+            </div>
+        </div>
+    </div>
+    <script src="http://maps.google.com/maps/api/js"></script>
+    <script src="cep.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.grid{
+    height: 100vh;
+
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas: 'g1' 'g2';
+}
+.g1{
+    background: #1a457d;
+    grid-area: g1;
+    box-shadow: 0 0 6px 3px black;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    color: white;
+}
+.g2{
+    
+    grid-area: g2;
+}
+#map { 
+    height: 480px;
+    width: 900px;
+    border-radius: 20px; 
+    border: 6px solid gray;
+}
+.leiaut{
+    height:100%;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.cep-none{
+    display:none;
+    
+}
+#cep{
+    background: #d7d7d7;
+    border:none;
+    color: rgb(0, 0, 0);
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-left: 20px;
+    
+}
+#btn-cep{
+    background: #1a457d;
+    border:none;
+    color: #fff;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#buscar, .voltar{
+    background: #1a457d;
+    border:none;
+    color: #fff;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+a{
+    margin: 50px 0;
+}
+
+
+
+/* CEP */
+#Map{
+    height: 480px;
+    width: 900px;
+    border-radius: 20px; 
+    border: 6px solid gray;
+}
+
+.cepMap1 { 
+    display:none;
+}
+.cepMap2 { 
+    height: 480px;
+    width: 900px;
+    border-radius: 20px; 
+    border: 6px solid gray;
+}
+
+@media (max-width:600px){
+
+    
+    #map{
+        height: 90%;
+        width: 90%;
+        border-radius: 20px; 
+        margin: 20px 0;
+    }
+
+    .pesquisar{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction:column;
+    }
+    .pesquisar button{
+        margin:10px 0;
+    }
+
+}
